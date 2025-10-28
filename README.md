@@ -81,13 +81,13 @@ dependencies:
   Dialog konfirmasi hapus muncul sebelum data dihapus dari API.
 
 ## Analisis Kode
-1. api_service.dart → Berisi semua fungsi komunikasi dengan API (fetchUsers, createUser, updateUser, deleteUser).
-2. user_model.dart → Model data utama untuk parsing JSON dari API ke objek User.
-3. created_user_model.dart → Model khusus untuk menyimpan hasil respons ketika menambah user (POST).
-4. main.dart → File utama aplikasi. Menampilkan daftar user dari API menggunakan FutureBuilder, serta tombol tambah (+) untuk ke halaman add_user_page.
-5. add_user_page.dart → Halaman form untuk menambah user baru.
-6. edit_user_page.dart → Halaman untuk memperbarui (update) data user yang sudah ada.
-7. user_list_item.dart → Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
+1. api_service.dart: Berisi semua fungsi komunikasi dengan API (fetchUsers, createUser, updateUser, deleteUser).
+2. user_model.dart: Model data utama untuk parsing JSON dari API ke objek User.
+3. created_user_model.dart: Model khusus untuk menyimpan hasil respons ketika menambah user (POST).
+4. main.dart: File utama aplikasi. Menampilkan daftar user dari API menggunakan FutureBuilder, serta tombol tambah (+) untuk ke halaman add_user_page.
+5. add_user_page.dart: Halaman form untuk menambah user baru.
+6. edit_user_page.dart: Halaman untuk memperbarui (update) data user yang sudah ada.
+7. user_list_item.dart: Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
 
 ## Kesimpulan:
 Aplikasi berhasil mengimplementasikan CRUD penuh (Create, Read, Update, Delete) menggunakan Flutter dan API ReqRes. Data dapat diambil, ditambahkan, diperbarui, dan dihapus dengan tampilan UI yang rapi dan validasi input yang berfungsi baik.
