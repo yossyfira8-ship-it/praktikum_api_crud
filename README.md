@@ -82,13 +82,14 @@ dependencies:
 
 ## Analisis Kode
 1. api_service.dart: Berisi semua fungsi komunikasi dengan API (fetchUsers, createUser, updateUser, deleteUser).
+
    Pengambilan Data (READ)
    
    <img width="1490" height="782" alt="carbon" src="https://github.com/user-attachments/assets/4abd0ccf-acd2-4769-87a6-ac31abf75fae" />
 
    fungsi inti buat membaca data dari API ReqRes dan mengubah hasil JSON jadi list User. Tanpa ini, aplikasi gak bisa menampilkan data apa pun di UI.
 
-2. user_model.dart: Model data utama untuk parsing JSON dari API ke objek User.
+3. user_model.dart: Model data utama untuk parsing JSON dari API ke objek User.
    
 4. created_user_model.dart: Model khusus untuk menyimpan hasil respons ketika menambah user (POST).
    
@@ -107,25 +108,28 @@ dependencies:
    Bagian ini memperlihatkan bagaimana aplikasi menghapus data dari API dan memperbarui tampilan tanpa reload penuh.
    
 6. add_user_page.dart: Halaman form untuk menambah user baru.
+   
    Menambah Data (CREATE)
    
    <img width="1796" height="1192" alt="carbon (2)" src="https://github.com/user-attachments/assets/9f7af8d8-8b9c-45a4-811a-53652d7011fa" />
 
    Fungsi inti untuk mengirim data baru ke API (POST) dan memberikan feedback ke pengguna. Menunjukkan alur input → validasi → request → hasil.
 
-7. edit_user_page.dart: Halaman untuk memperbarui (update) data user yang sudah ada.
+8. edit_user_page.dart: Halaman untuk memperbarui (update) data user yang sudah ada.
+   
     Memperbarui Data (UPDATE)
     
     <img width="1848" height="596" alt="carbon (3)" src="https://github.com/user-attachments/assets/e82df7ff-46a9-48ce-9982-555379838994" />
 
     Baris ini menunjukkan cara mengirim data hasil edit ke API (PUT), inti dari operasi Update dalam CRUD.
 
-8. user_list_item.dart: Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
+10. user_list_item.dart: Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
+    
     UI Komponen Tiap User
 
     <img width="1456" height="856" alt="carbon (5)" src="https://github.com/user-attachments/assets/7741f487-b9e7-4f2c-be89-15c12d9ca91c" />
 
-    Menunjukkan komponen utama tampilan daftar user — hasil nyata dari operasi READ.
+    Menunjukkan komponen utama tampilan daftar user hasil nyata dari operasi READ.
 
 ## Kesimpulan dan Saran 
 Aplikasi ini berhasil mengimplementasikan operasi CRUD (Create, Read, Update, Delete) secara penuh menggunakan Flutter dan API eksternal ReqRes.in. Seluruh proses pengambilan, penambahan, pembaruan, dan penghapusan data berjalan dengan baik, disertai tampilan UI yang rapi serta validasi input yang berfungsi sebagaimana mestinya. Untuk pengembangan lebih lanjut, disarankan menggunakan state management seperti Provider agar pengelolaan data lebih efisien, menambahkan fitur pencarian pengguna, serta menerapkan animasi transisi agar pengalaman pengguna menjadi lebih interaktif dan menarik.
