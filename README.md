@@ -1,9 +1,9 @@
 # (CRUD & STYLING)
 # Pengenalan Implementasi Dasar API Eksternal
 
-## NAMA: YOSSY FIRA ROSDIANA
-## NIM: 362458302022
-## KELAS : 2B TRPL
+NAMA: YOSSY FIRA ROSDIANA
+NIM: 362458302022
+KELAS : 2B TRPL
 
 ## Laporan Praktikum
 
