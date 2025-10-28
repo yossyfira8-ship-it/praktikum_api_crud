@@ -49,6 +49,7 @@ dependencies:
 * Data pengguna diambil dari API menggunakan fungsi fetchUsers() dan ditampilkan dalam daftar menggunakan ListView.builder. Data yang diambil berupa avatar, nama, dan email pengguna.
   
   ![1](https://github.com/user-attachments/assets/48fd4152-c3ef-47d4-9fd7-570047dc860b)
+
   Menampilkan daftar pengguna dari API reqres.in.
 
 4.4 Bagian 4 – Membuat Data (CREATE - POST Request)
@@ -56,6 +57,7 @@ dependencies:
 * Form input digunakan untuk menambahkan data pengguna baru ke API. Form ini juga dilengkapi validasi agar data tidak kosong.
 
   ![2](https://github.com/user-attachments/assets/73f482cd-5eda-40b5-a529-b40dff157f2b)
+
   Form tambah user berhasil menampilkan input nama dan pekerjaan.
 
 4.5.1 Implementasi UPDATE (PUT Request)
@@ -63,6 +65,7 @@ dependencies:
 * Halaman edit user digunakan untuk memperbarui data yang sudah ada.
 
   ![3](https://github.com/user-attachments/assets/6aee8806-6f26-43b5-add3-cc6d16aadc2e)
+
   Tampilan halaman edit user yang digunakan untuk memperbarui nama atau pekerjaan.
 
 4.5.2 Implementasi DELETE (DELETE Request)
@@ -70,6 +73,7 @@ dependencies:
 * Tombol hapus memunculkan dialog konfirmasi sebelum data dihapus.
 
   ![4](https://github.com/user-attachments/assets/8d138af5-56ba-4fa2-8b01-bf4098838f34)
+
   Dialog konfirmasi hapus muncul sebelum data dihapus dari API.
 
 ## Analisis Kode
