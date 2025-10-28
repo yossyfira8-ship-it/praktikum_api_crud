@@ -1,4 +1,5 @@
-# praktikum_api_crud
+# (CRUD & STYLING)
+# Pengenalan Implementasi Dasar API Eksternal
 
 ## NAMA: YOSSY FIRA ROSDIANA
 ## NIM: 362458302022
