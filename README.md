@@ -82,15 +82,50 @@ dependencies:
 
 ## Analisis Kode
 1. api_service.dart: Berisi semua fungsi komunikasi dengan API (fetchUsers, createUser, updateUser, deleteUser).
+   Pengambilan Data (READ)
+   
+   <img width="1490" height="782" alt="carbon" src="https://github.com/user-attachments/assets/4abd0ccf-acd2-4769-87a6-ac31abf75fae" />
+
+   fungsi inti buat membaca data dari API ReqRes dan mengubah hasil JSON jadi list User. Tanpa ini, aplikasi gak bisa menampilkan data apa pun di UI.
+
 2. user_model.dart: Model data utama untuk parsing JSON dari API ke objek User.
-3. created_user_model.dart: Model khusus untuk menyimpan hasil respons ketika menambah user (POST).
-4. main.dart: File utama aplikasi. Menampilkan daftar user dari API menggunakan FutureBuilder, serta tombol tambah (+) untuk ke halaman add_user_page.
-5. add_user_page.dart: Halaman form untuk menambah user baru.
-6. edit_user_page.dart: Halaman untuk memperbarui (update) data user yang sudah ada.
-7. user_list_item.dart: Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
+   
+4. created_user_model.dart: Model khusus untuk menyimpan hasil respons ketika menambah user (POST).
+   
+5. main.dart: File utama aplikasi. Menampilkan daftar user dari API menggunakan FutureBuilder, serta tombol tambah (+) untuk ke halaman add_user_page.
 
-## Kesimpulan:
-Aplikasi berhasil mengimplementasikan CRUD penuh (Create, Read, Update, Delete) menggunakan Flutter dan API ReqRes. Data dapat diambil, ditambahkan, diperbarui, dan dihapus dengan tampilan UI yang rapi dan validasi input yang berfungsi baik.
+   Menampilkan Data di UI
+   
+   <img width="1354" height="1266" alt="carbon (1)" src="https://github.com/user-attachments/assets/c7a7e2f8-ab0b-4e3a-b8a7-71393252c723" />
 
-## Saran:
-Gunakan state management seperti Provider, tambahkan fitur pencarian user, dan animasi transisi agar aplikasi lebih efisien dan menarik.
+   Menunjukkan hubungan antara data API dan tampilan Flutter (pakai FutureBuilder). Di sinilah data “hidup” dan muncul di layar.
+
+   Menghapus Data (DELETE)
+   
+   <img width="1474" height="596" alt="carbon (4)" src="https://github.com/user-attachments/assets/c3660fae-b29e-44d3-b819-06904d3d26bd" />
+
+   Bagian ini memperlihatkan bagaimana aplikasi menghapus data dari API dan memperbarui tampilan tanpa reload penuh.
+   
+6. add_user_page.dart: Halaman form untuk menambah user baru.
+   Menambah Data (CREATE)
+   
+   <img width="1796" height="1192" alt="carbon (2)" src="https://github.com/user-attachments/assets/9f7af8d8-8b9c-45a4-811a-53652d7011fa" />
+
+   Fungsi inti untuk mengirim data baru ke API (POST) dan memberikan feedback ke pengguna. Menunjukkan alur input → validasi → request → hasil.
+
+7. edit_user_page.dart: Halaman untuk memperbarui (update) data user yang sudah ada.
+    Memperbarui Data (UPDATE)
+    
+    <img width="1848" height="596" alt="carbon (3)" src="https://github.com/user-attachments/assets/e82df7ff-46a9-48ce-9982-555379838994" />
+
+    Baris ini menunjukkan cara mengirim data hasil edit ke API (PUT), inti dari operasi Update dalam CRUD.
+
+8. user_list_item.dart: Komponen widget untuk menampilkan tiap item user di daftar (berisi avatar, nama, dan tombol edit/delete).
+    UI Komponen Tiap User
+
+    <img width="1456" height="856" alt="carbon (5)" src="https://github.com/user-attachments/assets/7741f487-b9e7-4f2c-be89-15c12d9ca91c" />
+
+    Menunjukkan komponen utama tampilan daftar user — hasil nyata dari operasi READ.
+
+## Kesimpulan dan Saran 
+Aplikasi ini berhasil mengimplementasikan operasi CRUD (Create, Read, Update, Delete) secara penuh menggunakan Flutter dan API eksternal ReqRes.in. Seluruh proses pengambilan, penambahan, pembaruan, dan penghapusan data berjalan dengan baik, disertai tampilan UI yang rapi serta validasi input yang berfungsi sebagaimana mestinya. Untuk pengembangan lebih lanjut, disarankan menggunakan state management seperti Provider agar pengelolaan data lebih efisien, menambahkan fitur pencarian pengguna, serta menerapkan animasi transisi agar pengalaman pengguna menjadi lebih interaktif dan menarik.
